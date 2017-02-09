@@ -64,45 +64,47 @@
 		</div>
 		<h1>Сливочное мороженое</h1>
 		<form class="filter" action="htmlacademy.ru" method="get">
-
-			<label>Сортировка
-				<select name="sorting">
-					<option value="rating_asc">по популярности</option>
-					<option value="price_asc">сначала недорогие</option>
-					<option value="price_desc">сначала дорогие</option>
-					<option value="fat_asc">по жирности</option>
-				</select>
-			</label>
-
-			<div>Цена 100&nbsp;руб. &mdash;&nbsp;500&nbsp;руб.
-				<!--рейндж на два ползунка-->
+			<div class="filter-item">
+				<label class="sorting">Сортировка
+					<select name="sorting">
+						<option value="rating_asc">по популярности</option>
+						<option value="price_asc">сначала недорогие</option>
+						<option value="price_desc">сначала дорогие</option>
+						<option value="fat_asc">по жирности</option>
+					</select>
+				</label>
 			</div>
-			Жирность
-			<label>
-				<input name="fat" type="radio" value="0"> 0%
-			</label>
-			<label>
-				<input name="fat" type="radio" value="10" checked>до 10%
-			</label>
-			<label>
-				<input name="fat" type="radio" value="20">до 30%
-			</label>
-			<label>
-				<input name="fat" type="radio" value="30">выше 30%
-			</label>
-			Наполнители
-			<label>
-				<input name="fill[]" type="checkbox" value="шоколад" checked> шоколадные
-				<input name="fill[]" type="checkbox" value="сахар"> сахарные присыпки
-				<input name="fill[]" type="checkbox" value="фрукты"> фрукты
-				<input name="fill[]" type="checkbox" value="сироп"> сиропы
-				<input name="fill[]" type="checkbox" value="джем"> джемы
-			</label>
-
-			<button class="btn" type="submit">Применить</button>
+			<div class="price filter-item">Цена 100&nbsp;руб. &mdash;&nbsp;500&nbsp;руб.
+				
+			</div>
+				<div class="filter-item">Жирность
+					<label>
+						<input name="fat" type="radio" value="0"> 0%
+					</label>
+					<label>
+						<input name="fat" type="radio" value="10" checked>до 10%
+					</label>
+					<label>
+						<input name="fat" type="radio" value="20">до 30%
+					</label>
+					<label>
+						<input name="fat" type="radio" value="30">выше 30%
+					</label>
+				</div>
+				<div class="filter-item">
+					Наполнители
+					<label>
+						<input name="fill[]" type="checkbox" value="шоколад" checked> шоколадные
+						<input name="fill[]" type="checkbox" value="сахар"> сахарные присыпки
+						<input name="fill[]" type="checkbox" value="фрукты"> фрукты
+						<input name="fill[]" type="checkbox" value="сироп"> сиропы
+						<input name="fill[]" type="checkbox" value="джем"> джемы
+					</label>
+				</div>
+				<button class="btn filter-item" type="submit">Применить</button>
 		</form>
 
-		<div class="catalog">
+		<div class="catalog ">
 			<div class="catalog-item">
 				<img src="img/1.jpg" width="270" height="270" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
 				<p><span>310</span><span>₽</span>/кг</p>
@@ -149,7 +151,7 @@
 				<a>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</a>
 			</div>
 			<div class="catalog-item">
-				<img src="img/31.jpg" width="270" height="270" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
+				<img src="img/32.jpg" width="270" height="270" alt="Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой">
 				<p><span>435</span><span>₽</span>/кг</p>
 				<a>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</a>
 			</div>
@@ -175,7 +177,7 @@
 		</div>
 	</main>
 
-	<footer class="main-footer">
+	<footer>
 		<div class="container clearfix">
 			<section class="footer-social">
 				<a class="social-btn social-btn-twit" href="#">Твитер</a>
@@ -194,7 +196,7 @@
 				<img class="html-academy-logo" src="img/html-logo.png" alt="">
 				<p>Сделано в<a href="https://htmlacademy.ru">HTML Academy</a>©2017</p>
 			</section>
-	</div>
+		</div>
 	</footer>
 </body>
 
