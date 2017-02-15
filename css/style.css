@@ -1,9 +1,9 @@
 body {
 	font-size: 14px;
 	line-height: 16px;
-	color: white;
+	color: #000000;
 	font-weight: normal;
-	font-family: "Roboto", "Arial", sans-serif;
+	font-family: 'Roboto','Arial' sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #849d8f;
@@ -45,7 +45,7 @@ h3 {
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 26px;
-	background-color: antiquewhite;
+
 }
 
 .top a {
@@ -70,7 +70,6 @@ h3 {
 
 .shedule {
 	text-align: right;
-	width: 166px;
 	height: 40px;
 }
 
@@ -109,7 +108,7 @@ h3 {
 	padding: 0;
 	margin-bottom: 65px;
 	min-height: 326px;
-	background-color: aquamarine;
+
 }
 
 .catalog-item {
@@ -129,7 +128,7 @@ h3 {
 }
 
 .feature-wrapper {
-	width: 1106px;
+	display: width: 1106px;
 	padding: 0;
 	margin: 0 auto;
 }
@@ -139,6 +138,7 @@ h3 {
 	width: 540px;
 	margin-bottom: 35px;
 }
+
 .feature-item a {
 	text-align: center;
 }
@@ -180,12 +180,40 @@ h3 {
 	background-color: white;
 }
 
-
-
 .footer-social {
 	float: left;
-	width: 185px;
-	margin-right: 213px;
+	width: 250px;
+	margin-right: 203px;
+}
+
+.social-btn {
+	padding: 0;
+	display: inline-block;
+	background-color: #e6ebe9;
+	height: 37px;
+	width: 37px;
+	margin-right: 10px;
+	vertical-align: middle;
+	border: 3px solid #c2cec7;
+	border-radius: 40px;
+}
+.social-btn:last-child {
+	margin-right: 0;
+}
+
+
+.social-btn-tw {
+	background-image: url(/img/tweet.png);
+	opacity: 0;
+}
+.social-btn-inst {
+	background-image: url(/img/isnsta.png);
+}
+.social-btn-fb {
+	background-image: url(/img/fb.png);
+}
+.social-btn-vk {
+	background-image: url(/img/vk.png);
 }
 
 .footer-docs {
@@ -200,6 +228,7 @@ h3 {
 }
 
 .feedback-modal {
+	display: none;
 	width: 478px;
 	height: 445px;
 }
