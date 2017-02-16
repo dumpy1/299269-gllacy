@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Глейси</title>
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-   <link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+<!--   <link href="../css/normalize.css" rel="stylesheet">-->
+	<link href="../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -14,17 +14,17 @@
 	<header>
 		<div class="container ">
 			<div class="top clearfix">
-				<a><img src="img/Logo.png" width="154" height="64" alt="Gllacy Shop"></a>
+				<a class="logo"><img src="../img/logo.png" width="154" height="64" alt="Gllacy Shop"></a>
 				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="#">Каталог</a>
+							<a href="#" class="navigation-link"><span >Каталог</span></a>
 						</li>
 						<li>
-							<a href="#">Доставка и оплата</a>
+               <a href="#" class="navigation-link"><span >Доставка и оплата</span></a>
 						</li>
 						<li>
-							<a href="#">О компании</a>
+               <a href="#" class="navigation-link"><span >О компании</span></a>
 						</li>
 					</ul>
 
@@ -32,13 +32,13 @@
 				<div class="user-block">
 					<ul>
 						<li>
-							<a href="#">Поиск</a>
+							<a href="#" class="find">поиск</a>
 						</li>
 						<li>
-							<a href="#">Вход</a>
+							<a href="#" class="login">Вход</a>
 						</li>
 						<li>
-							<a href="#" class="full">Корзина</a>
+							<a href="#" class="basket full">Пусто</a>
 						</li>
 					</ul>
 				</div>
@@ -57,8 +57,8 @@
 		<div class="container clearfix">
 
 			<div class="slider">
-				<h2>Крем-брюле и пломбир с малиновым джемом</h2>
-				<div class="slider-btn">
+				<h2 >Крем-брюле и пломбир с малиновым джемом</h2>
+				<div class="slider-paginator">
 
 					<button type="button" class="">1</button>
 
@@ -68,51 +68,55 @@
 
 					<button type="button" class="">3</button>
 				</div>
-				<button type="submit" class="btn">Давайте оба</button>
+				<button type="submit" class="slider-btn btn">Давайте оба</button>
 			</div>
 
 			<div class="promotion clearfix">
 				<div class="promo left">
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2&nbsp;кг любого фруктового мороженого, добавим в&nbsp;ваш заказ банку малинового варенья бесплатно.</p>
-					<a href="#" class="btn">Хочу варенье!</a>
+					<footer>
+             <a href="#" class="btn">Хочу варенье!</a>
+          </footer>
 				</div>
 				<div class="promo right">
 					<h3>Шоколадки даром!</h3>
 					<p>При покупке 2&nbsp;кг пломбира, добавим в&nbsp;ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<a href="#" class="btn">Хочу шоколадки!</a>
+					<footer>
+					 <a href="#" class="btn">Хочу шоколадки!</a>
+          </footer>
 				</div>
 			</div>
 
 			<div class="catalog clearfix">
 				<div class="catalog-item hit">
-					<img src="img/1.jpg" width="267" height="267" alt="">
+					<div class="catalog-image"><img src="../img/1.jpg" width="267" height="267" alt=""></div>
 					<p><span>310</span><span>₽</span>/кг</p>
-					<a href="#">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</a>
+           <a href="#" ><span class="underline">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span></a>
 					<a href="#" class="btn hover">Быстрый просмотр</a>
 				</div>
 				<div class="catalog-item hit">
-					<img src="img/2.jpg" width="267" height="267" alt="">
+           <div class="catalog-image"><img src="../img/2.jpg" width="267" height="267" alt=""></div>
 					<p><span>380</span><span>₽</span>/кг</p>
-					<a href="#">Сливочно-кофейное с&nbsp;кусочками шоколада</a>
+           <a href="#"><span class="underline">Сливочно-кофейное с&nbsp;кусочками шоколада</span></a>
 					<a href="#" class="btn hover">Быстрый просмотр</a>
 				</div>
 				<div class="catalog-item hit">
-					<img src="img/3.jpg" width="267" height="267" alt="">
+           <div class="catalog-image"><img src="../img/3.jpg" width="267" height="267" alt=""></div>
 					<p><span>335</span><span>₽</span>/кг</p>
-					<a href="#">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</a>
+           <a href="#"><span class="underline">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span></a>
 					<a href="#" class="btn hover">Быстрый просмотр</a>
 				</div>
 				<div class="catalog-item hit">
-					<img src="img/4.jpg" width="267" height="267" alt="">
+           <div class="catalog-image"><img src="../img/4.jpg" width="267" height="267" alt=""></div>
 					<p><span>415</span><span>₽</span>/кг</p>
-					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+           <a href="#"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></a>
 					<a href="#" class="btn hover">Быстрый просмотр</a>
 				</div>
 
 			</div>
 
-			<div class="feature ">
+			<div class="feature">
 				<h3>Магазин глейси&nbsp;&mdash; это онлайн и&nbsp;офлайн магазин по&nbsp;продаже мороженого собственного производства на&nbsp;развес</h3>
 				<div class="feature-wrapper clearfix">
 					<p class="feature-item ice">Всё наше мороженое изготавливается на&nbsp;собственном производстве, с&nbsp;использованием современного оборудования и&nbsp;проверенных временем технологий.</p>
@@ -127,7 +131,7 @@
 
 			<div class="blog clearfix">
 				<div class="blog-news">
-					<h3 class="">Новое сообщение в нашем блоге</h3>
+					<h3>Новое сообщение в нашем блоге</h3>
 					<a href="#">10&nbsp;способов сервировки фруктовых щербетов к&nbsp;столу</a>
 				</div>
 				<div class="blog-subscribe">
@@ -144,11 +148,11 @@
 		<div class="map">
 			<div class="container">
 				<div class="feedback ">
-					<p>Адрес главного офиса и офлайн магазина:
-						<b>ул. Большая Конюшеная 19/8, Санкт-Петербург</b>
-					</p>
+           <p>Адрес главного офиса и офлайн магазина:</p>
+              <b>ул. Большая Конюшеная 19/8, Санкт-Петербург</b>
+
 					<p>Для заказа по телефону:
-						<b>8 812 450-25-25</b> (c 10 до 20 ежедневно)</p>
+             <b>8 812 450-25-25</b><br> <span>(c 10 до 20 ежедневно)</span></p>
 					<a class="btn">Форма обратной связи</a>
 				</div>
 			</div>
@@ -173,7 +177,7 @@
 				<a href="#">Экологические стандарты</a>
 			</section>
 			<section class="footer-copyright">
-				<img class="html-academy-logo" src="img/html-logo.png" alt="">
+				<img class="html-academy-logo" src="../img/html-logo.png" alt="HTML Academy">
 				<p>Сделано в<a href="https://htmlacademy.ru">HTML Academy</a>©2017</p>
 			</section>
 		</div>
