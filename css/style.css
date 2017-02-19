@@ -1,4 +1,5 @@
 body {
+
    font-size: 16px;
    line-height: 24px;
    color: #ffffff;
@@ -564,7 +565,21 @@ body > input[type="radio"] {
    float: left;
    width: 267px;
    margin-right: 26px;
+   text-align: center;
 }
+
+.catalog-item:hover {
+
+   border-radius: 5px;
+  background: rgba(255,255,255,.2);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
+  width: 267px;
+  height: 400px;
+   text-decoration: none;
+
+
+  }
 
 .catalog-image {
    width: 265px;
@@ -572,6 +587,7 @@ body > input[type="radio"] {
    border-radius: 265px;
    overflow: hidden;
    margin-bottom: 14px;
+
 }
 
 .catalog-item img {
@@ -614,23 +630,18 @@ body > input[type="radio"] {
 /*подчёркивание разобратся*/
 
 .catalog-item a {
+   margin-bottom: 20px;
    color: #ffffff;
    font-size: 16px;
    line-height: 22px;
    text-decoration: none;
+   border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
-.catalog-item .underline {
-   display: inline-block;
-   font-size: 16px;
-   line-height: 22px;
-   text-decoration: underline;
-   /*   border-bottom: 1px solid #9db1a5;*/
-   text-align: center;
-}
+
 
 .hover {
-   display: none;
+   display: inline-block;
 }
 
 .feature {
@@ -697,7 +708,8 @@ body > input[type="radio"] {
 .blog-news {
    float: left;
    padding-left: 22px;
-   width: 530px;
+   padding-right: 250px;
+   width: 288px;
    height: 220px;
    margin-right: 26px;
    border-radius: 13px;
@@ -712,12 +724,12 @@ body > input[type="radio"] {
 }
 
 .blog-news a {
-   display: inline-block;
+
    color: #323232;
    font-size: 24px;
    line-height: 30px;
    font-weight: bold;
-   text-align: left;
+   text-align: justify;
 }
 
 .blog-subscribe {
@@ -889,14 +901,16 @@ body > input[type="radio"] {
 }
 
 .footer-docs a {
+   float:left;
    font-size: 13px;
    line-height: 18px;
    color: #ffffff;
    text-decoration: none;
-   text-align: left;
-   margin-bottom: 6px;
+   border-bottom: 1px solid rgba(255,255,255,.2);
+   text-align: right;
+
    margin-right: 26px;
-   padding-left: 24px;
+
 }
 
 .footer-copyright {
@@ -921,6 +935,7 @@ body > input[type="radio"] {
 }
 
 .feedback-modal {
+   display: none;
    position: fixed;
   top: 50%;
   left: 50%;
@@ -935,6 +950,7 @@ body > input[type="radio"] {
  }
 
 .modal-close {
+
    position: absolute;
    margin: 0;
    padding: 0;
@@ -991,6 +1007,7 @@ body > input[type="radio"] {
 
 .feedback-modal textarea {
    width: 400px;
+   resize: none;
 
 }
 
